@@ -1,0 +1,15 @@
+Please add documentations for any changes made
+
+Git Account: juliantjw@gmail.com
+Repository: git-cmd-ref
+
+====================
+Version 0.0.1 
+08/06/2021
+User Name: juliantjw@gmail.com
+
+- Created Repository
+- Created README and changelog.txt
+- Added progit.pdf
+    - Downloaded from www.git-scm.com
+
