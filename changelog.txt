@@ -13,3 +13,12 @@ User Name: juliantjw@gmail.com
 - Added progit.pdf
     - Downloaded from www.git-scm.com
 
+====================
+Version 0.0.2 
+09/06/2021
+User Name: juliantjw@gmail.com
+
+- Split the README file and created the git-cmd-ref.txt
+- Added github-git-cheat-sheet.pdf
+    - Downloaded from www.git-scm.com
+

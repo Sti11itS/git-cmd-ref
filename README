@@ -1,6 +1,4 @@
-This is an initial README file containing descriptions of basic git commands
-and other information.
-
+This README file serves as a landing page for the git-cmd-ref repository
 
 This repo was created as a reference guide on using "git" written in a more user friendly way.
 There's COMMAND --help for a more formal display of information of git.
@@ -15,12 +13,6 @@ www.git-scm.com/docs
 
 ********************
 
-Recall: 
-
-<...> = value of argument
-[...] = optional argument
-
-
 ====================
 PLAN OF ACTION
 
@@ -29,138 +21,41 @@ PLAN OF ACTION
 2 - Create an interactive Python script or program that displays information for the relevant 
     commands.
  
+3 - Organise the repo on the go
+
+====================
+CURRENT CONFIGURATION
+====================
+
+git config --global --add user.email juliantjw@gmail.com
+git config --global --add user.name Sti11itS
+git config --global --add color.ui auto
+
+
+==============================================
+LOCATION OF GIT CONFIG FILES AND THEIR PURPOSE
+==============================================
 
 ==========
-diff <file1> <file2>
-
-- Bash command to show the changes between two files 
-
-diff -u <file1> <file2> > <file.diff>
-
-- Write STOUT of cmd showing all difference between the two files
-  into file.diff
-
+Git System Config File
+- C:/Program Files/Git/etc/gitconfig
 
 ==========
-patch <file> < <file.diff>
-
-- Bash command to apply changes from a .diff file made from the diff cmd
-  onto the file in question
-
+Git Global Config File
+- C:/Users/Julian
 
 ==========
-git init [OPTIONS] [directory]
-
-- Git command that creates an empty repository in the current file directory
-- basically a .git directory with subdirectories containing the necessary config files
-- If .git exists, reinitialise git to use that repository
-
-- If [directory] is empty, use current directory
-
-==========
-git clone [OPTIONS] [--] <repository> [<target-directory>]
-
-- Git command to clone from remote <repository> into a directory specified by [<target-directory>]
-- If [target-directory] is not specified, Git creates new directory from the <repository> name into the
-  current directory
-  - Example:
-    pwd: /x/Programming/GitHub/Reposistories/ and 
-    cmd: git clone https://github.com/Sti11itS/hello-world.git results in
-    directory: /x/Programming/GitHub/Repositories/hello-world
-    and contents
+Git Global Local File
+- <repo_dir>/.git/config
 
 
 ==========
-git config
+The .gitignore file
+- <repo_dir>/.gitignore
 
-*** See online documentation or local cmd help
+echo <file> > .gitignore
 
-git config --list --show-origin
-- https://stackoverflow.com/questions/2114111/where-does-git-config-global-get-write-to
-- Global file located at C:/Users/Julian/.gitconfig
-
-git config --global -l
-- List all config key.value pairs in the git global config file
-
-git config --global <key> <"value"> OR 
-git config --global --add <key> <value>
-- Adds a key.value pair in the global config file
-
-
-==========
-git add <file>
-
-_ Git updates the index using the current content found in the working tree, to prepare 
-  the content staged for the next commit.
-- The "index" holds a snapshot of the content of the working tree, and it is this snapshot that 
-  is taken as the contents of the next commit. Thus after making any changes to the working tree, 
-  and before running the commit command, you must use the add command to add any new or modified files 
-  to the index.
-- This command can be performed multiple times before a commit. It only adds the content of 
-  the specified file(s) at the time the add command is run; if you want subsequent changes included 
-  in the next commit, then you must run git add again to add the new content to the index.
-
-git add -p
-
-- Shows changes being added and asks whether you want to stage it or not
-
-
-==========
-git status
-
-- Displays paths that have differences between the index file and the current HEAD commit, 
-  paths that have differences between the working tree and the index file, and paths in the 
-  working tree that are not tracked by Git (and are not ignored by gitignore[5]). 
-- The first are what you would commit by running git commit; the second and third are what 
-  you could commit by running git add before running git commit.
-
-
-==========
-git diff [<options>] [--] [<path> ...]
-
-- Show changes between the working tree and the index or a tree, changes between the index and a tree, 
-  changes between two trees, changes resulting from a merge, changes between two blob objects, or 
-  changes between two files on disk.
-
-git diff -u/-p/--patch
-
-- Generates detailed differences between the modified and original files
-
-==========
-git commit [<options>]
-
-*******************************************************
-- Must have a commit message for the commit to suceed
-*******************************************************
-- Create a new commit containing the current contents of the index and the given log message describing the changes.
-- See online documentation
-
-git commit -m <message>
-
-- use the given <message> as the commit message
-
-==========
-git log [<options>]
-
-- Shows commit logs for current git init
-- See online documentation
-
-git log -p/-u/--patch
-
-- -p = patch
-- Similar to diff -u
-
-git lot --stat
-
-- Shows a diffstat
-
-==========
-git show [<options>] [<objects> ...]
-
-- Show details for one or more [<objects>]. Can be blobs, trees, tags and commits
-
-git show [<COMMIT ID from git log>]
-
-- Shows log entry for [<COMMIT ID>] generated by git log
-
+- The .gitignore file specitifes intentionally untracked files that Git should ignore.
+- Files already tracked by Git are not affected
+- see online documentation
 
