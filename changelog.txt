@@ -6,7 +6,7 @@ Repository: git-cmd-ref
 ====================
 Version 0.0.1 
 08/06/2021
-User Name: juliantjw@gmail.com
+User Name: Sti11itS
 
 - Created Repository
 - Created README and changelog.txt
@@ -16,9 +16,19 @@ User Name: juliantjw@gmail.com
 ====================
 Version 0.0.2 
 09/06/2021
-User Name: juliantjw@gmail.com
+User Name: Sti11tiS
 
 - Split the README file and created the git-cmd-ref.txt
 - Added github-git-cheat-sheet.pdf
     - Downloaded from www.git-scm.com
 
+====================
+Version 0.0.3
+10/06/2021
+User Name: Sti11itS
+
+- Updated README and git-cmd-ref.txt with topic
+  on branching and merging
+- Practiced branching and merging using free_memory.py
+  and following Coursera
+- Corrected User Name in changelog.txt

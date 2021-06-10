@@ -220,18 +220,41 @@ Usually git revert HEAD
 
 
 
+=====================
+BRANCHING AND MERGING
+=====================
+
+==========
+git branch
+- Displays list of branches and which is the current selected
 
 
+git branch <branch_name>
+- Creates new branch
 
 
+git checkout <branch_name>
+- Switches to <branch_name> snapshot
 
 
+git checkout -b <new_branch_name>
+- Creates <new_branch_name> branch and switches snapshot to it
+
+Note: git checkout operates on both files and branches
 
 
+git branch -d <branch_name>
+- Deletes <branch_name>
 
 
+git merge <branch_name>
+- Merges <branch_name> (files and commit history) together with the HEAD (the 
+  current branch)
 
 
+git log --graph --oneline
+- Displays a visual representation of the commit history for a repo
 
 
-
+git merge --abort
+- Stops the merge and resets working tree back to the previous commit
