@@ -43,3 +43,14 @@ User Name: Sti11itS
   on GitHub
 
 - Created remote repo on GitHub to host this repo
+
+====================
+Version 0.0.5
+12/06/2021
+User Name: Sti11itS
+
+- Created Reference folder
+- Created empty .gitignore file
+- Moved github-git-cheat-sheet.pdf and progit.pdf
+  into the Reference folder
+- Formatted README.md to follow markdown specs

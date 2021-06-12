@@ -281,3 +281,9 @@ git pull
 - Pulls latest commits from the remote repository
 
 
+==========
+git remote [OPTIONS]
+- Displays the set of remote repositories being tracked
+
+git remote [-v | --verbose]
+- More verbose and show remote url

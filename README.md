@@ -13,8 +13,9 @@ www.git-scm.com/docs
 
 ********************
 
-====================
-PLAN OF ACTION
+
+# PLAN OF ACTION
+----------------
 
 1 - Make records and references of git.
 
@@ -23,35 +24,32 @@ PLAN OF ACTION
  
 3 - Organise the repo on the go
 
-====================
-CURRENT CONFIGURATION
-====================
-
-git config --global --add user.email juliantjw@gmail.com
-git config --global --add user.name Sti11itS
-git config --global --add color.ui auto
 
 
-==============================================
-LOCATION OF GIT CONFIG FILES AND THEIR PURPOSE
-==============================================
+# CURRENT CONFIGURATION
+-----------------------
 
-==========
-Git System Config File
-- C:/Program Files/Git/etc/gitconfig
-
-==========
-Git Global Config File
-- C:/Users/Julian
-
-==========
-Git Global Local File
-- <repo_dir>/.git/config
+`git config --global --add user.email juliantjw@gmail.com`
+`git config --global --add user.name Sti11itS`
+`git config --global --add color.ui auto`
 
 
-==========
-The .gitignore file
-- <repo_dir>/.gitignore
+
+# LOCATION OF GIT CONFIG FILES AND THEIR PURPOSE
+------------------------------------------------
+
+
+### Git System Config File
+`C:/Program Files/Git/etc/gitconfig`
+
+### Git Global Config File
+`C:/Users/Julian`
+
+### Git Global Local File
+`<repo_dir>/.git/config`
+
+### The .gitignore file
+`<repo_dir>/.gitignore`
 
 echo <file> > .gitignore
 
@@ -60,17 +58,17 @@ echo <file> > .gitignore
 - see online documentation
 
 
-====================
-BRANCHES AND MERGING
-====================
+# BRANCHES AND MERGING
+----------------------
 
-Branch
+### Branch
 
-Basic       | - A pointer (the HEAD) to a particular commit
-Level       | - Represents an independent line of development of a repo project
-Description |
-            | - The default branch initialised for new repo is usually called
-            |   "master". But now preferred to be called "main"
+#### Basic Level Description
+
+- A pointer (the HEAD) to a particular commit
+- Represents an independent line of development of a repo project
+- The default branch initialised for new repo is usually called
+  "master". But now preferred to be called "main"
 
 - Creating branches of the Main is for experimenting with different ideas
   and untested solutions before incorporating them into the Main branch
@@ -89,19 +87,19 @@ Description |
   accurately, to reflect the new branch's snapshot
 
 
-Merging
+### Merging
 
 - To combine branched data and history together
 
 - Uses two different algorithms to perform a merge:
   Fast-Forward and Three-way Merge
 
-Fast-Forward Merge
+### Fast-Forward Merge
 
 - All commits in the check-out branch are also in the branch that's 
   being merged. Meaning: The commit history does not diverge
 
-Three-way Merge
+### Three-way Merge
 
 - Happens when the merging branches have diverged in someway
 - Occurs when both branches have additional commits after the split
@@ -121,6 +119,7 @@ Three-way Merge
 
 SAMPLE Merge Conflict
 
+```
 def main():
 <<<<<<< HEAD
     print("Start of program>>>>>>>")
@@ -129,17 +128,22 @@ def main():
 >>>>>>> improvement-to-the-code
 
 main()
-
+```
 
 - git log --graph --oneline to visually see the commit history of the branches
 
 
 
-===================
-GITHUB INTERACTIONS
-===================
+# GITHUB INTERACTIONS
+---------------------
 
 ***************************************************************************
 - New remote repositories can ONLY be made on GitHub itself
 - Only then can push the local to the remote by following the instructions
 ***************************************************************************
+
+1 - Create blank <repo> on GitHub
+2 - git remote add origin https://github.com/Sti11itS/<repo>.git
+3 - git branch -M main
+4 - git push -u origin main
+
