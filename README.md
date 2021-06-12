@@ -133,3 +133,13 @@ main()
 
 - git log --graph --oneline to visually see the commit history of the branches
 
+
+
+===================
+GITHUB INTERACTIONS
+===================
+
+***************************************************************************
+- New remote repositories can ONLY be made on GitHub itself
+- Only then can push the local to the remote by following the instructions
+***************************************************************************

@@ -32,3 +32,14 @@ User Name: Sti11itS
 - Practiced branching and merging using free_memory.py
   and following Coursera
 - Corrected User Name in changelog.txt
+
+====================
+Version 0.0.4
+12/06/2021
+User Name: Sti11itS
+
+- Renamed README to README.md (.md = markdown file type)
+- Updated README.md, git-cmd-ref.txt with topic
+  on GitHub
+
+- Created remote repo on GitHub to host this repo

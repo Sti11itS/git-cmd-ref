@@ -228,14 +228,16 @@ BRANCHING AND MERGING
 git branch
 - Displays list of branches and which is the current selected
 
-
 git branch <branch_name>
 - Creates new branch
 
+git branch -d <branch_name>
+- Deletes <branch_name>
 
+
+==========
 git checkout <branch_name>
 - Switches to <branch_name> snapshot
-
 
 git checkout -b <new_branch_name>
 - Creates <new_branch_name> branch and switches snapshot to it
@@ -243,18 +245,39 @@ git checkout -b <new_branch_name>
 Note: git checkout operates on both files and branches
 
 
-git branch -d <branch_name>
-- Deletes <branch_name>
-
-
+==========
 git merge <branch_name>
 - Merges <branch_name> (files and commit history) together with the HEAD (the 
   current branch)
 
 
+==========
 git log --graph --oneline
 - Displays a visual representation of the commit history for a repo
 
 
+==========
 git merge --abort
 - Stops the merge and resets working tree back to the previous commit
+
+
+=======================
+INTERACTING WITH GITHUB
+=======================
+
+==========
+git clone <url>
+- Makes copy of repository from GitHub into local directory
+- See earlier entry
+
+
+==========
+git push
+- Updates remote repo from local commits in local directory
+
+
+==========
+git pull
+- Pulls latest commits from the remote repository
+
+
