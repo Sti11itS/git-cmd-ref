@@ -279,6 +279,9 @@ git push
 ==========
 git pull
 - Pulls latest commits from the remote repository
+- AND merges them into the local dir
+- In other words: Incorporates changes from a remote repository 
+  into the current branch
 
 
 ==========
@@ -287,3 +290,17 @@ git remote [OPTIONS]
 
 git remote [-v | --verbose]
 - More verbose and show remote url
+
+git remote show <repo_name>
+git remote show origin
+- Displays information on <repo_name>
+- Note: "origin" is shorthand for the repository's URL. See README
+
+git remote update
+- Fetches the most up-to-date objects without merging
+
+==========
+git fetch [OPTIONS]
+- Fetches branches and/or tags from remote repo, along with their
+  history (git log)
+- DOES NOT MERGE into local dir. Needs "git merge"

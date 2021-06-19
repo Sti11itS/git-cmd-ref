@@ -54,3 +54,13 @@ User Name: Sti11itS
 - Moved github-git-cheat-sheet.pdf and progit.pdf
   into the Reference folder
 - Formatted README.md to follow markdown specs
+
+
+====================
+Version 0.0.6
+19/06/2021
+User Name: Sti11itS
+
+- Updated git-cmd-ref.txt and README.md
+- "git fetch" and "git remote update"
+ 

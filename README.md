@@ -142,6 +142,13 @@ main()
 - Only then can push the local to the remote by following the instructions
 ***************************************************************************
 
+- In Git, "origin" is a shorthand name for the remote repository that a project was originally
+ cloned from. More precisely, it is used instead of that original repository's URL - and thereby 
+ makes referencing much easier.
+- Note that origin is by no means a "magical" name, but just a standard convention. Although it 
+ makes sense to leave this convention untouched, you could perfectly rename it without 
+ losing any functionality.
+
 1 - Create blank <repo> on GitHub
 2 - git remote add origin https://github.com/Sti11itS/<repo>.git
 3 - git branch -M main
