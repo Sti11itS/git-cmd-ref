@@ -6,37 +6,40 @@ Right now all the information added is from the Coursera course "Introduction to
 All of this is done to become more familiar and remember the various commands on the journey to 
 become a better programmer/coder.
 
-********************
-The online reference website can be found at:
-
+\********************
+The online reference website for GIT can be found at:
 www.git-scm.com/docs
 
-********************
+For Markdown file types like this README.md:
+https://guides.github.com/features/mastering-markdown/
+https://docs.github.com/en/github/writing-on-github
+
+\********************
 
 
 # PLAN OF ACTION
-----------------
+\----------------
 
-1 - Make records and references of git.
+1. Make records and references of git.
 
-2 - Create an interactive Python script or program that displays information for the relevant 
+2. Create an interactive Python script or program that displays information for the relevant 
     commands.
  
-3 - Organise the repo on the go
+3. Organise the repo on the go
 
 
 
 # CURRENT CONFIGURATION
------------------------
+\-----------------------
 
-`git config --global --add user.email juliantjw@gmail.com`
-`git config --global --add user.name Sti11itS`
-`git config --global --add color.ui auto`
+    git config --global --add user.email juliantjw@gmail.com
+    git config --global --add user.name Sti11itS
+    git config --global --add color.ui auto
 
 
 
 # LOCATION OF GIT CONFIG FILES AND THEIR PURPOSE
-------------------------------------------------
+\------------------------------------------------
 
 
 ### Git System Config File
@@ -51,7 +54,7 @@ www.git-scm.com/docs
 ### The .gitignore file
 `<repo_dir>/.gitignore`
 
-echo <file> > .gitignore
+echo \<file> > .gitignore
 
 - The .gitignore file specitifes intentionally untracked files that Git should ignore.
 - Files already tracked by Git are not affected
@@ -59,38 +62,38 @@ echo <file> > .gitignore
 
 
 # BRANCHES AND MERGING
-----------------------
+\----------------------
 
-### Branch
+## Branch
 
-#### Basic Level Description
+### Basic Level Description
 
-- A pointer (the HEAD) to a particular commit
+- A pointer (the `HEAD`) to a particular commit
 - Represents an independent line of development of a repo project
 - The default branch initialised for new repo is usually called
   "master". But now preferred to be called "main"
 
-- Creating branches of the Main is for experimenting with different ideas
+- Creating branches of the `Main` is for experimenting with different ideas
   and untested solutions before incorporating them into the Main branch
 - This is to reduce the messiness and to keep the commit history and logs tidy
   and organised.
 - By creating sub-branches new code and be written and tested before merging
   back into the Main branch.
 
-- git add and git commit works as per normal to the current selected working branch
-  which is selected by HEAD.
-- When switching branches, the HEAD updates the working directory/tree and the commit log 
+- `git add` and `git commit` works as per normal to the current selected working branch
+  which is selected by `HEAD`.
+- When switching branches, the `HEAD` updates the working directory/tree and the commit log 
   history to reflect the snapshot of the new selected branch
 - This means that if there were new files saved in the commit of the new branch, those 
-  files and commit will disappear from the working directory/tree when the HEAD switches 
+  files and commit will disappear from the working directory/tree when the `HEAD` switches 
   to an old branch. When switching back to the new branch, they will be restored, or more
   accurately, to reflect the new branch's snapshot
 
 
-### Merging
+## Merging
 
 - To combine branched data and history together
-
+- Pull / Merge / Push workflow
 - Uses two different algorithms to perform a merge:
   Fast-Forward and Three-way Merge
 
@@ -133,9 +136,50 @@ main()
 - git log --graph --oneline to visually see the commit history of the branches
 
 
+## Rebasing Your Changes
+
+- In a large project with a large team of developers, naturally there will be multiple
+  repo branches containing changes or additions of code. 
+- Use `git rebase <ref_branch>` to update the `<current_branch>` to have the latest commit possible
+  from `<ref_branch>`.
+  - Change the base of the `<current_branch>` to be `<ref_branch>`.
+- Helps to make debugging easier and prevents three-way merges by transferring completed work
+  from one branch to another
+- Rather than using `git merge` and performing a three-way merge, rebasing rewrites commit history
+  and maintains linearity, making for cleaner code.
+  - Fetch / Rebase / Push workflow
+
+
+```
+          A---B---C topic
+         /
+    D---E---F---G master
+```
+```
+git rebase master
+git rebase master topic
+```
+```
+                  A'--B'--C' topic
+                 /
+    D---E---F---G master
+```
+
+
+## Best Practices for Collaboration
+
+- Synchronize your branches before starting any work on your own.
+- Try and avoid having very large changes that modify a lot of different things.
+- When working on a big change, it makes sense to have a separate feature branch.
+- Regularly merge changes made on the master branch back onto the feature branch.
+- Have the latest version of the project in the master branch and a stable version of the 
+  project on a separate branch.
+- You shouldn't rebase changes that have been pushed to remote repos.
+- Having good commit messages is important.
+
 
 # GITHUB INTERACTIONS
----------------------
+\---------------------
 
 ***************************************************************************
 - New remote repositories can ONLY be made on GitHub itself
@@ -149,8 +193,9 @@ main()
  makes sense to leave this convention untouched, you could perfectly rename it without 
  losing any functionality.
 
-1 - Create blank <repo> on GitHub
-2 - git remote add origin https://github.com/Sti11itS/<repo>.git
-3 - git branch -M main
-4 - git push -u origin main
+1. Create blank `<repo>` on GitHub
+2. git remote add origin `https://github.com/Sti11itS/<repo>`.git
+3. git branch -M main
+4. git push -u origin main
+
 

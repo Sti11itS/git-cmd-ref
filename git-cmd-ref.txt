@@ -277,14 +277,6 @@ git push
 
 
 ==========
-git pull
-- Pulls latest commits from the remote repository
-- AND merges them into the local dir
-- In other words: Incorporates changes from a remote repository 
-  into the current branch
-
-
-==========
 git remote [OPTIONS]
 - Displays the set of remote repositories being tracked
 
@@ -299,8 +291,29 @@ git remote show origin
 git remote update
 - Fetches the most up-to-date objects without merging
 
+
 ==========
 git fetch [OPTIONS]
 - Fetches branches and/or tags from remote repo, along with their
   history (git log)
-- DOES NOT MERGE into local dir. Needs "git merge"
+- DOES NOT MERGE into local directory. Needs "git merge" to update the
+  local directory
+
+
+==========
+git pull
+- Fetches latest commits from the remote repository
+- AND merges them into the local dir
+- In other words: Incorporates changes from a remote repository 
+  into the current branch
+
+
+==========
+git rebase <another_branch_usually_remote_main>
+- Rebasing means changing the base commit that's used for our local branch
+- Applies commit changes from remote branch onto local branch if there
+  are no commit conflicts (three way merges)
+- Helps to update the local code with changes/commits from the remote without
+  losing any changes/commits made locally
+- *Refer to online documentation or README.md*
+

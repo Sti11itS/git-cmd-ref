@@ -63,4 +63,12 @@ User Name: Sti11itS
 
 - Updated git-cmd-ref.txt and README.md
 - "git fetch" and "git remote update"
- 
+
+
+====================
+Version 0.0.7
+22/06/2021
+User Name: Sti11itS
+
+- Updated git-cmd-ref.txt and README.md
+- Topic on `git rebase <ref_branch>` added
