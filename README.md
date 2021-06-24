@@ -6,41 +6,36 @@ Right now all the information added is from the Coursera course "Introduction to
 All of this is done to become more familiar and remember the various commands on the journey to 
 become a better programmer/coder.
 
-\********************
+********************
 The online reference website for GIT can be found at:
 www.git-scm.com/docs
+
+For using GitHub
+https://docs.github.com/en
 
 For Markdown file types like this README.md:
 https://guides.github.com/features/mastering-markdown/
 https://docs.github.com/en/github/writing-on-github
 
-\********************
+********************
 
 
 # PLAN OF ACTION
-\----------------
 
 1. Make records and references of git.
-
 2. Create an interactive Python script or program that displays information for the relevant 
-    commands.
- 
+   commands.
 3. Organise the repo on the go
 
 
-
 # CURRENT CONFIGURATION
-\-----------------------
 
     git config --global --add user.email juliantjw@gmail.com
     git config --global --add user.name Sti11itS
     git config --global --add color.ui auto
 
 
-
 # LOCATION OF GIT CONFIG FILES AND THEIR PURPOSE
-\------------------------------------------------
-
 
 ### Git System Config File
 `C:/Program Files/Git/etc/gitconfig`
@@ -62,7 +57,6 @@ echo \<file> > .gitignore
 
 
 # BRANCHES AND MERGING
-\----------------------
 
 ## Branch
 
@@ -120,7 +114,7 @@ echo \<file> > .gitignore
   to wrap up the merge.
 - The commit message will contain a description that it is merging the other branch.
 
-SAMPLE Merge Conflict
+###### SAMPLE Merge Conflict
 
 ```
 def main():
@@ -165,6 +159,14 @@ git rebase master topic
     D---E---F---G master
 ```
 
+### Git Rebase Interactive `git rebase -i <branch>`
+
+- Shows a list of possible actions to commits made if edits are required
+- Use this command to combine commits. There are two methods to combine
+  - Squash: use commit, but meld into previous commit
+  - Fixup: like 'squash' but discard this commit's log message
+  - Both operate the same but the difference is the commit message
+
 
 ## Best Practices for Collaboration
 
@@ -179,7 +181,6 @@ git rebase master topic
 
 
 # GITHUB INTERACTIONS
-\---------------------
 
 ***************************************************************************
 - New remote repositories can ONLY be made on GitHub itself
@@ -198,4 +199,17 @@ git rebase master topic
 3. git branch -M main
 4. git push -u origin main
 
+## Forking and Pull Request
 
+### Forking
+- A way of creating a copy of the given repository so that it belongs to our user on GitHub.
+
+### Pull Request
+- A commit or series of commits that you send to the owner of the repository so that they
+  incorporate it into their tree.
+- Repositories belong to other people are usually commit-protected to prevent unwanted commit
+  changes. Reasons are obvious
+- Any commit changes performed on the forked repo are saved on a new branch "patch-#" automatically 
+  created by GitHub.
+- Only then the Pull Request on the original repository can be performed. This informs the original
+  repo owner about the proposed changes

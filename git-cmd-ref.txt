@@ -275,6 +275,14 @@ git clone <url>
 git push
 - Updates remote repo from local commits in local directory
 
+git push -u origin <branch>
+- Pushes current <branch> on local to remote repo as a new branch
+- Use `git branch` to see available local branches and select the correct one
+
+git push -f
+- Forces local commits to remote repo for the current branch
+- This is why any refactor performed is NOT to be done on the MAIN branch
+
 
 ==========
 git remote [OPTIONS]
@@ -317,3 +325,5 @@ git rebase <another_branch_usually_remote_main>
   losing any changes/commits made locally
 - *Refer to online documentation or README.md*
 
+git rebase -i <branch>
+- Interactive txt to assist in organising commits made after a base

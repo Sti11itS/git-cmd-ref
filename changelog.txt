@@ -72,3 +72,12 @@ User Name: Sti11itS
 
 - Updated git-cmd-ref.txt and README.md
 - Topic on `git rebase <ref_branch>` added
+
+====================
+Version 0.0.8
+24/06/2021
+User Name: Sti11itS
+
+- Updated git-cmd-ref.txt and README.md
+- Topic on Forking, Pull Request and 
+  interactive git rebase (git rebase -i <branch>) added
