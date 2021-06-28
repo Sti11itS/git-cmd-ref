@@ -209,7 +209,41 @@ git rebase master topic
   incorporate it into their tree.
 - Repositories belong to other people are usually commit-protected to prevent unwanted commit
   changes. Reasons are obvious
-- Any commit changes performed on the forked repo are saved on a new branch "patch-#" automatically 
-  created by GitHub.
-- Only then the Pull Request on the original repository can be performed. This informs the original
-  repo owner about the proposed changes
+- Any commit changes performed on the forked repo are saved on a new branch 
+  "patch-#" automatically created by GitHub.
+- Only then the Pull Request on the original repository can be performed. This informs 
+  the original repo owner about the proposed changes
+
+## Code Review
+
+- Request, or create, a style guide for the project.
+- Respond to Pull Requests ASAP when possible, especially when making comments.
+- If you're a project maintainer, it's important that you are reply promptly to pull 
+  requests and don't let them stagnate. The more time that passes until a pull request 
+  gets reviewed, the more likely it is that there's a new commit that causes a conflict 
+  when you try to merge in the change.
+- if it's an open source project that volunteers are contributing to is that it's 
+  important that you understand any changes you accept. You never know if the other person 
+  is going to stick around to maintain the code after you merge it in so you better make 
+  sure you can do that.
+
+### Tracking Issues
+
+- When it comes to coordinating who does what and when, a common strategy for active 
+  software projects is to use an issue tracker (or bug tracker).
+- It's built-in at GitHub. Third-party examples include Bugzilla.
+
+### Continuous Integration / Continuous Delivery System (CI/CD)
+
+- We can write automated tests to test the code for us and then use a continuous 
+  integration or CI system to run those tests automatically.
+- Will build and test our code everytime there's a change.
+- Once we have our code automatically built and tested, the next automation step 
+  is continuous deployment which is sometimes called Continuous Delivery or CD. 
+- **Pipeline** - Specify the steps that need to run to get the result you want.
+- **Artifacts** - The name used to describe any files that are generated as part of
+  the pipeline.
+
+- Make sure the authorized entities for the test servers are not the same entities 
+  authorized to deploy on the production servers.
+- Always have a plan to recover your access in case your pipeline gets compromised.
