@@ -38,13 +38,19 @@ https://docs.github.com/en/github/writing-on-github
 # LOCATION OF GIT CONFIG FILES AND THEIR PURPOSE
 
 ### Git System Config File
-`C:/Program Files/Git/etc/gitconfig`
+| Linux | Windows |
+|:-----:|:-------:|
+| `[path]/etc/gitconfig` | `C:/Program Files/Git/etc/gitconfig` |
 
 ### Git Global Config File
-`C:/Users/Julian`
+| Linux | Windows |
+|:-----:|:-------:|
+| `~/.gitconfig` | `C:/Users/Julian` |
 
 ### Git Global Local File
-`<repo_dir>/.git/config`
+| Linux | Windows |
+|:-----:|:-------:|
+| `<repo_dir>/.git/config` | `<repo_dir>/.git/config` |
 
 ### The .gitignore file
 `<repo_dir>/.gitignore`
